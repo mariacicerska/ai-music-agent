@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodify AI — Музичний агент за настроєм</title>
+    <!-- Підключаємо Tailwind CSS для швидкого та стильного дизайну -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-purple-500 selection:text-white">
 
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-headphones-simple text-purple-400 text-2xl"></i>
+                <span class="text-xl font-bold tracking-wide bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Moodify AI</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm text-slate-300">
+                <a href="#about" class="hover:text-purple-400 transition">Про проєкт</a>
+                <a href="#features" class="hover:text-purple-400 transition">Можливості</a>
+                <a href="#demo" class="hover:text-purple-400 transition">Як це працює</a>
+            </nav>
+            <a href="#demo" class="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg shadow-purple-900/30">Спробувати демо</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-32 px-6 max-w-6xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-800/50 text-purple-300 text-xs font-semibold mb-6">
+            <i class="fa-solid fa-sparkles"></i> AI-агент нового покоління
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+            Твоя музика. Твій настрій. <br>Створено штучним інтелектом.
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+            Moodify AI аналізує твій емоційний стан, контекст чи текстовий опис і миттєво підбирає унікальні треки, які ідеально резонують із тобою в цю хвилину.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#demo" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 text-white font-medium px-8 py-3.5 rounded-xl transition shadow-xl shadow-purple-900/40">
+                Запустити агента
+            </a>
+            <a href="https://github.com/mariacicerska" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-medium px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-github text-lg"></i> GitHub репозиторій
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Чому саме Moodify AI?</h2>
+                <p class="text-slate-400">Інтелектуальна система рекомендацій виходить за рамки звичайних плейлистів за жанрами.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-950 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-6 border border-purple-800/40">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Аналіз настрою</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Опиши свій день або емоцію у вільній формі, і агент розпізнає приховані нюанси твого стану.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-950 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-6 border border-purple-800/40">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Адаптивні алгоритми</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">AI враховує темп, ритм, гармонію та навіть текст пісень, формуючи для тебе персональні мікси.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-950 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-6 border border-purple-800/40">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Миттєва генерація</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Отримуй готову підбірку за секунди з посиланнями на зручні платформи для прослуховування.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Mockup -->
+    <section id="demo" class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-b from-slate-900 to-slate-900/80 border border-slate-800 rounded-3xl p-8 shadow-2xl">
+            <h2 class="text-2xl font-bold mb-2 text-center">Інтерактивний прототип агента</h2>
+            <p class="text-slate-400 text-sm text-center mb-8">Введи свій поточний настрій або побажання:</p>
+            
+            <div class="flex gap-3 mb-6">
+                <input type="text" id="userInput" placeholder="Наприклад: хочу щось спокійне для роботи дощовим вечором..." class="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 text-slate-100">
+                <button onclick="generateMockPlaylist()" class="bg-purple-600 hover:bg-purple-500 text-white font-medium px-6 py-3 rounded-xl text-sm transition">Знайти треки</button>
+            </div>
+
+            <div id="playlistResult" class="hidden space-y-3 bg-slate-950/60 border border-slate-800/80 p-5 rounded-2xl">
+                <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Підібрано AI для тебе:</div>
+                <div class="flex items-center justify-between p-3 bg-slate-900 rounded-xl border border-slate-800/50">
+                    <div>
+                        <div class="font-medium text-sm">Midnight City</div>
+                        <div class="text-xs text-slate-400">M83 • Atmospheric Synth-pop</div>
+                    </div>
+                    <span class="text-xs bg-purple-950 text-purple-300 px-2.5 py-1 rounded-full border border-purple-800/40">98% збіг</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-slate-900 rounded-xl border border-slate-800/50">
+                    <div>
+                        <div class="font-medium text-sm">Me and Your Mama</div>
+                        <div class="text-xs text-slate-400">Childish Gambino • Soul/Psychedelic</div>
+                    </div>
+                    <span class="text-xs bg-purple-950 text-purple-300 px-2.5 py-1 rounded-full border border-purple-800/40">94% збіг</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Moodify AI. Курсова робота. Усі права захищено.</p>
+    </footer>
+
+    <script>
+        function generateMockPlaylist() {
+            const input = document.getElementById('userInput').value;
+            const resultBox = document.getElementById('playlistResult');
+            if(input.trim() !== "") {
+                resultBox.classList.remove('hidden');
+            } else {
+                alert('Будь ласка, введи свій настрій!');
+            }
+        }
+    </script>
+</body>
+</html>
